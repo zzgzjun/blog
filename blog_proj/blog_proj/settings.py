@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "blog.views.global_setting"
             ],
         },
     },
@@ -102,6 +103,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static'),]
+
+# 网站基本信息配置
+SITE_NAME="鸟飘零的个人博客"
+SITE_DESC="专注python开发，欢迎和大家交流"
+SITE_SINA="http://weibo.sina.com/yopeiying"
+SITE_TENCENT="http://weibo.qq.com/yopeiying"
+PRO_RSS="http://www.baidu.com"
+PRO_EMAIL="2589641825@qq.com"
 
 LOGGING = {
     'version': 1,
