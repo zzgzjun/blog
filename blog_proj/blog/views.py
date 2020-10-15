@@ -8,12 +8,12 @@ logger=logging.getLogger("blog.views")
 
 def global_setting(request):
     return {
-    "SITE_NAME":"鸟飘零的个人博客",
-    "SITE_DESC":"专注python开发，欢迎和大家交流",
-    "SITE_SINA" : "http://weibo.sina.com/yopeiying",
-    "SITE_TENCENT" :"http://weibo.qq.com/yopeiying",
-    "PRO_RSS" :"http://www.baidu.com",
-    "PRO_EMAIL":"2589641825@qq.com"
+    "SITE_NAME":settings.SITE_NAME,
+    "SITE_DESC":settings.SITE_DESC,
+    "SITE_SINA" : settings.SITE_SINA,
+    "SITE_TENCENT" :settings.SITE_TENCENT,
+    "PRO_RSS" :settings.PRO_RSS,
+    "PRO_EMAIL":settings.PRO_EMAIL,
     }
 
 def index(request):
